@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xenonarch Pro</title>
+<style>
+:root{--gold:#D4AF37;--black:#050505;--panel:rgba(18,18,18,.88);--soft:#c9b26a}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Segoe UI,sans-serif}
+body{background:linear-gradient(135deg,#000,#111);color:#fff;overflow-x:hidden}
+header{position:fixed;width:100%;top:0;padding:1.2rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,.8);backdrop-filter:blur(16px);border-bottom:1px solid rgba(212,175,55,.2);z-index:1000}
+.logo{font-size:1.8rem;color:var(--gold);font-weight:700;letter-spacing:4px}
+nav a{color:#fff;text-decoration:none;margin-left:2rem;transition:.3s}
+nav a:hover{color:var(--gold)}
+.hero{height:100vh;background:url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80') center/cover;display:flex;align-items:center;padding:0 8%;position:relative}
+.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.45))}
+.hero-content{position:relative;max-width:700px}
+.hero h1{font-size:5rem;color:var(--gold);line-height:1;text-transform:uppercase}
+.hero p{margin:1.5rem 0;font-size:1.2rem;color:#ddd}
+.btn{padding:1rem 2rem;border:1px solid var(--gold);background:transparent;color:var(--gold);cursor:pointer;border-radius:40px;transition:.35s}
+.btn:hover{background:var(--gold);color:#000;box-shadow:0 0 30px rgba(212,175,55,.45)}
+section{padding:7rem 8%}
+.section-title{font-size:3rem;color:var(--gold);margin-bottom:3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
+.card{background:var(--panel);padding:2rem;border:1px solid rgba(212,175,55,.15);border-radius:24px;backdrop-filter:blur(14px);transition:.4s}
+.card:hover{transform:translateY(-10px);box-shadow:0 20px 50px rgba(212,175,55,.15)}
+.card img{width:100%;height:260px;object-fit:cover;border-radius:18px;margin-bottom:1rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stat{padding:2rem;background:#0c0c0c;border-radius:18px}
+.stat h3{color:var(--gold);font-size:2rem}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+input,textarea{width:100%;padding:1rem;margin:.7rem 0;background:#111;border:1px solid rgba(212,175,55,.25);color:#fff;border-radius:14px}
+footer{padding:3rem;text-align:center;border-top:1px solid rgba(212,175,55,.15);color:var(--soft)}
+@media(max-width:900px){.hero h1{font-size:3rem}.contact-wrap,.stats{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<header><div class='logo'>XENONARCH</div><nav><a href='#'>Accueil</a><a href='#portfolio'>Portfolio</a><a href='#projects'>Projets</a><a href='#services'>Services</a><a href='#contact'>Contact</a></nav></header>
+<section class='hero'><div class='hero-content'><h1>Designing Gold & Shadow</h1><p>Architecture futuriste haut de gamme conçue par Xenon.</p><button class='btn'>Explorer</button></div></section>
+<section id='portfolio'><h2 class='section-title'>Portfolio Xenon</h2><div class='card'><h3>Architecte Visionnaire</h3><p>Xenon conçoit des espaces d’exception où l’innovation rencontre le luxe structurel.</p></div></section>
+<section><div class='stats'><div class='stat'><h3>48+</h3><p>Projets</p></div><div class='stat'><h3>12</h3><p>Pays</p></div><div class='stat'><h3>96%</h3><p>Satisfaction</p></div><div class='stat'><h3>8</h3><p>Prix</p></div></div></section>
+<section id='projects'><h2 class='section-title'>Réalisations</h2><div class='grid'><div class='card'><img src='https://images.unsplash.com/photo-1494526585095-c41746248156'><h3>Obsidian Villa</h3></div><div class='card'><img src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab'><h3>Aurum Tower</h3></div><div class='card'><img src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85'><h3>Nova Estate</h3></div></div></section>
+<section id='services'><h2 class='section-title'>Services</h2><div class='grid'><div class='card'>Architecture Résidentielle</div><div class='card'>Visualisation 3D</div><div class='card'>Concept Futuriste</div></div></section>
+<section id='contact'><h2 class='section-title'>Contact</h2><div class='contact-wrap'><div><h3>Email officiel</h3><p>x0830410@gmail.com</p></div><div><input placeholder='Nom'><input placeholder='Email'><textarea rows='5' placeholder='Votre message'></textarea><button class='btn'>Envoyer</button></div></div></section>
+<footer>© 2026 Xenonarch • Crafted by Xenon</footer>
+</body></html>
